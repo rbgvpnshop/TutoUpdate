@@ -1,8 +1,8 @@
 
 {
   
-"version": 72,
-"message": "10:58PM 10/01/2025\nConfig version: 72 \nWhat's new \n\nV2ray ဖိုင် ထပ်ထည့်ထားပါတယ် လိုင်းမကောင်းရင် V2rayဖိုင် ရွေးချိတ်သုံးပါ ",
+"version": 73,
+"message": "20:09PM 16/01/2025\nConfig version: 73 \nแก้ True iD \n\nรองรับการใช้งาน OpenVPN SSH SSL SlowDNS V2 ray\n\n🔴True\n🔵Dtac\n🟢\nAis",
 "fileUrl": "https://raw.githubusercontent.com/rbgvpnshop/TutoUpdate/refs/heads/main/config",
 
 "messageWarning":"What's new ?\n• Updated UI \n• Added Hotshare function \n• Fixed bug and more\n \nThanks for your understand❤️",
