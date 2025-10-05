@@ -1,10 +1,395 @@
-<!DOCTYPE html> <html lang="th"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>วิธีการใช้อินเทอร์เน็ตฟรีแบบสมาร์ท</title> <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> <style> video { width: 300px; height: auto; object-fit: cover; border: 2px solid #000; border-radius: 10px; } .card-title { font-size: 1rem; } .title { color: black; } .dtac { color: blue; } .true { color: red; } .ais { color: green; } .translate-btn { margin-top: 10px; text-align: center; } </style> </head> <body> <div class="container"> <!-- ปุ่มแปลภาษา --> <div class="translate-btn"> <div id="google_translate_element"></div> </div> <header class="my-4"> <h class="card-title">โปรโมชั่นที่จำเป็นต้องสมัครสำหรับแต่ละซิม</h> 
+<!doctype html>
+<html lang="th">
 
-<div class="layout">     
-          <button type="button" class="btn btn-outline-primary" style="max-height: 50px; width: 100%;" onclick="window.location.href='https://netfreerbg.shop/online.php';">เช็คสถานะออนไลน์</button>
-         </div>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>โปรสำหรับซิมและแอป VPN</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0f172a12;
+            --text: #1f2937;
+            --muted: #6b7280;
+            --hero: #ef4444;
+            --border: #ef4444;
+            --card: #fff;
+        }
 
-</header> <div class="row"> <!-- การ์ด Dtac --> <div class="col-md-4"> <div class="card mb-4"> <div class="card-body"> <img src="https://www.dtac.co.th/dtac-library/assets/img/icons/ico-dtac.png" alt="Dtac Logo" class="card-img-center" style="max-height: 50px; width: auto;"> <p>หากใช้ซิม Dtac ให้สมัครแพ็กเกจ ID ก่อน</p> แพ็กเกจ ID 64 บาท / 30 วัน <p><b>*900*3958#</b> กด <button class="btn btn-primary btn-sm" onclick="location.href='tel:*900*3958%23'">สมัคร</button></p> <p>(หลังสมัครเสร็จให้เลือกไฟล์ Dtac ID และเชื่อมต่อ)</p> <img src="https://raw.githubusercontent.com/rbgvpnshop/TutoUpdate/refs/heads/main/Screenshot_20250119_211748.jpg" class="img-thumbnail" alt="ภาพ (dtac_id)"> </div> </div> </div> <!-- การ์ด True --> <div class="col-md-4"> <div class="card mb-4"> <div class="card-body"> <img src="https://topping.truemoveh.com/assets/static/images/icon_fb&true@3x.82de9630.png" alt="True Logo" class="card-img-center" style="max-height: 30px; width: auto;"> <p>หากใช้ซิม True ให้สมัครแพ็กเกจ Viber ก่อน</p> แพ็กเกจ Viber 53 บาท / 30 วัน <p><b>*900*3809#</b> กด <button class="btn btn-primary btn-sm" onclick="location.href='tel:*900*3809%23'">สมัคร</button></p> <p>(หลังสมัครเสร็จให้เลือกไฟล์ True Viber และเชื่อมต่อ)</p> <img src="https://raw.githubusercontent.com/rbgvpnshop/TutoUpdate/refs/heads/main/Screenshot_20250119_214608.jpg" class="img-thumbnail" alt="ภาพ (true_viber)"> <p>หรือใช้ True ID แทน</p> <p>ดูวิธีสมัคร True ID ได้จากวิดีโอด้านล่าง</p> <div>ลิงก์สำหรับสมัคร👇👇</div> <a href="#" onclick="openInBrowser()">https://topping.truemoveh.com</a> <p>(หลังสมัครเสร็จให้เลือกไฟล์ True ID (OVPN) และเชื่อมต่อ)</p> <video controls poster="https://raw.githubusercontent.com/sansoe2022/image_store/refs/heads/main/trueid_poster.jpg"> <source src="https://github.com/sansoe2022/image_store/raw/refs/heads/main/trueid_video.mp4" type="video/mp4">เบราว์เซอร์ของคุณไม่รองรับวิดีโอ </video> <p class="true">หมายเหตุ: ความเร็วที่ได้จาก Viber และ True ID อยู่ที่ประมาณ 3 Mbps โดย True ID จะเสถียรกว่า</p> </div> </div> </div> <!-- การ์ด Ais --> <div class="col-md-4"> <div class="card mb-4"> <div class="card-body"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBwSTp4vgOVqME3OlQ30ghtLyl08fqw1xsemUKEdPNm937DFZ4CZlI_Zcn&s=10" alt="Ais Logo" class="card-img-center" style="max-height: 50px; width: auto;"> <p>หากใช้ซิม Ais ต้องสมัครทั้งสองแพ็กเกจด้านล่าง</p> <p>แพ็กเกจหลักและแพ็กเกจ Ais Play</p> <img src="https://raw.githubusercontent.com/rbgvpnshop/TutoUpdate/refs/heads/main/Screenshot_20250119_215004.jpg" class="img-thumbnail" alt="ภาพ (1)"> แพ็กเกจหลัก 64kbps - 32 บาท / 30 วัน <p><b>*777*7067#</b> กด <button class="btn btn-primary btn-sm" onclick="location.href='tel:*777*7067%23'">สมัคร</button></p> <p>แพ็กเกจ Ais Play - 64 บาท / 30 วัน</p> <p><b>*777*885#</b> กด <button class="btn btn-primary btn-sm" onclick="location.href='tel:*777*885%23'">สมัคร</button></p> <p class="true">หมายเหตุ: ต้องสมัครทั้งสองแพ็กเกจถึงจะใช้งานได้</p> </div> </div> </div> </div> <footer class="text-center mt-4"> <p>&copy; 2024 NETWORK DC</p> </footer> </div> <!-- Google Translate script --> <script type="text/javascript"> function googleTranslateElementInit() { new google.translate.TranslateElement({ pageLanguage: 'th', includedLanguages: 'en,th,my', layout: google.translate.TranslateElement.InlineLayout.DROPDOWN }, 'google_translate_element'); } </script> <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> <script> function isWebView() { let userAgent = navigator.userAgent || navigator.vendor || window.opera; return /wv|WebView/i.test(userAgent); } function openInBrowser() { window.location.href = "https://topping.truemoveh.com/"; } </script> <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script> <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
-<div class="layout">     
-          <button type="button" class="btn btn-outline-primary" onclick="window.location.href='https://netfreerbg.shop/online.php';">เช็คสถานะออนไลน์</button>
-         </div></script> </body> </html>
+        * {
+            box-sizing: border-box
+        }
+
+        html,
+        body {
+            height: 100%
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: "Noto Sans Thai", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        /* ---------- HERO ---------- */
+        .hero {
+            background: var(--hero);
+            color: #fff;
+            padding: 28px 20px 36px;
+            border-bottom-left-radius: 28px;
+            border-bottom-right-radius: 28px;
+        }
+
+        .hero h1 {
+            margin: 0 0 8px;
+            font-size: 34px;
+            line-height: 1.15;
+            font-weight: 800
+        }
+
+        .hero p {
+            margin: 0;
+            opacity: .95;
+            font-size: 16px
+        }
+
+        /* ---------- WRAPPER ---------- */
+        .wrap {
+            max-width: 980px;
+            margin: -22px auto 24px;
+            padding: 0 14px
+        }
+
+        .lead {
+            margin: 20px 0 10px;
+            color: var(--muted);
+            text-align: justify;
+            line-height: 1.9
+        }
+
+        /* ---------- HORIZONTAL CAROUSEL (scroll-snap) ---------- */
+        .carousel {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .track {
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-columns: 94%;
+            gap: 14px;
+            overflow-x: auto;
+            padding: 4px 2px 20px;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .slide {
+            scroll-snap-align: center;
+            display: flex;
+            justify-content: center
+        }
+
+        .card {
+            width: 100%;
+            max-width: 820px;
+            background: var(--card);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+            padding: 18px;
+        }
+
+        /* ---------- SCROLLABLE INNER BOX (vertical) ---------- */
+        .box {
+            border: 3px solid var(--border);
+            border-radius: 18px;
+            padding: 18px 16px;
+            max-height: 62dvh;
+            overflow: auto;
+            background: #fff;
+        }
+
+        .box::-webkit-scrollbar {
+            width: 10px
+        }
+
+        /* สกอลล์บาร์เบา ๆ */
+        .box::-webkit-scrollbar-thumb {
+            background: #e5e7eb;
+            border-radius: 10px
+        }
+
+        .center {
+            text-align: center
+        }
+
+        h2 {
+            margin: 8px 0 12px;
+            font-size: 22px
+        }
+
+        h3 {
+            margin: 16px 0 8px;
+            font-size: 18px
+        }
+
+        ol {
+            margin: 0 0 10px 22px;
+            padding: 0
+        }
+
+        li {
+            margin: 8px 0;
+            line-height: 1.85
+        }
+
+        .note {
+            color: var(--muted);
+            font-size: 14px;
+            margin-top: 10px
+        }
+
+        /* ---------- tiny badges ---------- */
+        .badge {
+            display: inline-block;
+            font-weight: 700;
+            font-size: 13px;
+            background: #fef2f2;
+            color: #991b1b;
+            border: 1px solid #fecaca;
+            border-radius: 999px;
+            padding: 4px 10px;
+            margin-bottom: 8px
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 999px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 8px
+        }
+
+        .tag-ais {
+            background: #e8f7ee;
+            color: #065f46
+        }
+
+        .tag-true {
+            background: #fee2e2;
+            color: #991b1b
+        }
+
+        .tag-dtac {
+            background: #e0f2fe;
+            color: #075985
+        }
+
+        /* ---------- ARROWS ---------- */
+        .nav {
+            position: absolute;
+            inset-block: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 46px;
+            pointer-events: none;
+        }
+
+        .nav button {
+            pointer-events: auto;
+            width: 40px;
+            height: 40px;
+            border-radius: 999px;
+            border: none;
+            background: #111827;
+            color: #fff;
+            font-size: 20px;
+            line-height: 1;
+            cursor: pointer;
+            opacity: .9;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, .18);
+        }
+
+        .nav.left {
+            inset-inline-start: 0
+        }
+
+        .nav.right {
+            inset-inline-end: 0
+        }
+
+        @media (max-width:640px) {
+            .nav {
+                display: none
+            }
+        }
+
+        /* มือถือใช้ปัดแทนปุ่ม */
+
+        /* header inside card */
+        .card-title {
+            font-weight: 800;
+            font-size: 24px;
+            margin: 6px 0 12px;
+            color: #ef4444
+        }
+
+        .header-text {
+            color: var(--muted);
+            text-align: justify;
+            line-height: 1.85
+        }
+
+        .logo {
+            height: 26px;
+            margin: 6px auto 2px;
+            display: block;
+            opacity: .9
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HERO -->
+    <header class="hero">
+        <div class="wrap" style="padding:0">
+            <h1>โปรโมชั่นสำหรับซิมและ VPN</h1>
+            <p>ข้อเสนอพิเศษจับคู่การใช้งาน VPN กับแพ็กของแต่ละเครือข่าย</p>
+        </div>
+    </header>
+
+    <main class="wrap">
+        <p class="lead">ข้อเสนอพิเศษสำหรับการใช้งานแอป&nbsp;VPN กับเครือข่ายโทรศัพท์มือถือที่หลากหลาย
+            มั่นใจว่าจะได้รับประสบการณ์ที่ดีที่สุด พร้อมโปรที่ตอบโจทย์ทุกความต้องการ</p>
+
+        <!-- CAROUSEL -->
+        <section class="carousel">
+            <div class="nav left"><button type="button" id="prev" aria-label="ก่อนหน้า">‹</button></div>
+            <div class="nav right"><button type="button" id="next" aria-label="ถัดไป">›</button></div>
+
+            <div class="track" id="track" aria-label="สลับเครือข่ายโดยเลื่อนซ้าย–ขวา">
+
+                <!-- AIS -->
+                <article class="slide" id="ais">
+                    <div class="card">
+                        <div class="card-title">เครือข่ายที่สามารถใช้งานคู่กับแอป VPN — AIS</div>
+                        <p class="header-text">
+                            ข้อเสนอพิเศษสำหรับการใช้งานแอป VPN กับเครือข่ายโทรศัพท์มือถือหลายค่าย
+                            มั่นใจว่าได้รับประสบการณ์ที่ดีที่สุดกับโปรที่ตอบโจทย์การใช้งาน
+                        </p>
+                        <div class="box" role="region" aria-label="รายละเอียดโปร AIS (เลื่อนแนวตั้งได้)">
+                            <svg class="logo" viewBox="0 0 64 24" aria-hidden="true">
+                                <path d="M8 18c16-16 36-12 48-12-2 18-22 28-40 26 10-5 18-12 24-20-12 8-22 11-32 6z"
+                                    fill="#22c55e" />
+                            </svg>
+                            <p class="center"><span class="badge">จำเป็นต้องสมัครโปรเท่านั้น</span></p>
+                            <span class="tag tag-ais">AIS</span>
+
+                            <h2 class="center">มีสองแบบให้เลือก</h2>
+
+                            <h3>แบบที่ 1</h3>
+                            <ol>
+                                <li>กด <strong>*777*7068#</strong> — โปร 128 kb <strong>33 บาท/เดือน</strong></li>
+                                <li>กด <strong>*777*885#</strong> — โปรเอนเตอร์เทน <strong>59 บาท/เดือน</strong><br>
+                  เติมรายเดือน <strong>100 บาท</strong> แล้วใช้งานเน็ตได้ไม่จำกัด</li>
+                            </ol>
+
+                            <h3>แบบที่ 2</h3>
+                            <ol>
+                                <li>โทร <strong>*777</strong> เลือกเมนูเปลี่ยนแพ็ก → ยืนยัน</li>
+                                <li>รอข้อความยืนยันว่าเปลี่ยนโปรสำเร็จ</li>
+                                <li>เติมเงิน <strong>70 บาท</strong> (อย่าเติมพอดี 60 เพราะมี VAT)</li>
+                                <li>สมัครโปรเอนเตอร์เทน <strong>*777*885#</strong> <strong>59 บาท/เดือน</strong></li>
+                                <li>เดือนถัดไปเติม 70 บาท ระบบจะล็อกสปีด 64kb และต่ออายุอัตโนมัติ</li>
+                            </ol>
+
+                            <p class="note">ปรับรหัส/ราคาให้ตรงกับโปรล่าสุดของคุณได้ตามต้องการ</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- True -->
+                <article class="slide" id="true">
+                    <div class="card">
+                        <div class="card-title">เครือข่ายที่สามารถใช้งานคู่กับแอป VPN — True</div>
+                        <p class="header-text">
+                            เลือกแพ็กความเร็วคงที่หรือแพ็กเสริมแบบต่ออายุอัตโนมัติให้เหมาะกับการใช้งาน VPN ของคุณ
+                        </p>
+                        <div class="box" role="region" aria-label="รายละเอียดโปร True (เลื่อนแนวตั้งได้)">
+                            <p class="center"><span class="badge">จำเป็นต้องสมัครโปรเท่านั้น</span></p>
+                            <span class="tag tag-true">true</span>
+
+                            <h2 class="center">ตัวอย่างขั้นตอน</h2>
+                            <ol>
+                                <li>สมัครโปรวัยทีน <strong>*935*5#</strong> ฟรี</li>
+                                <li>สมัครโปรเฟชชุดเกมมิ่ง <strong>*935*52#</strong> ต้องเติมเงิน 100 บาท</li>
+                                <li>สมัครโปรเฟชชุดเกมมิ่งแบบฟรี: กด <strong>*935*5</strong>
+                                    ก่อนวันถัดไปหรือหลังเที่ยงคืน แล้วกด <strong>*935*52#</strong></li>
+                                <li>สมัครโปรกันรั่ว <strong>*900*8131#</strong> 32 บาท/เดือน (แนะนำ)</li>
+                                <li>สมัครโปรทรูไอดี <strong>*900*3958#</strong> 64 บาท/เดือน</li>
+                                <li>สมัครโปรแชมเปี้ยนส์ โทร 9305 กด 1 → กด 9 → ยืนยันกด 1 (โปรนี้ได้กันรั่วฟรี)</li>
+                            </ol>
+
+                            <p class="note">กรุณาแก้เป็นรหัส/ราคา True ที่อัปเดตล่าสุดของคุณ</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- dtac -->
+                <article class="slide" id="dtac">
+                    <div class="card">
+                        <div class="card-title">เครือข่ายที่สามารถใช้งานคู่กับแอป VPN — dtac</div>
+                        <p class="header-text">
+                            โครงตัวอย่างสำหรับใส่รายละเอียดแพ็ก dtac ของคุณจริง ๆ (ปรับข้อความตามที่ใช้งานอยู่)
+                        </p>
+                        <div class="box" role="region" aria-label="รายละเอียดโปร dtac (เลื่อนแนวตั้งได้)">
+                            <svg class="logo" viewBox="0 0 64 24" aria-hidden="true">
+                                <path
+                                    d="M20 6c6 0 8 6-2 9 6-4 4-9 2-9zM38 6c6 0 8 6-2 9 6-4 4-9 2-9zM29 19c6 0 8-6-2-9 6 4 4 9 2 9z"
+                                    fill="#38bdf8" />
+                            </svg>
+                            <p class="center"><span class="badge">จำเป็นต้องสมัครโปรเท่านั้น</span></p>
+                            <span class="tag tag-dtac">dtac</span>
+
+                            <h2 class="center">แนวทางเลือกโปร</h2>
+                            <ol>
+                                <li>สมัครแพ็ก <strong>เน็ตไม่อั้น ความเร็วคงที่</strong> ของ dtac (ใส่รหัสจริงของคุณ)
+                                </li>
+                                <li>เลือกระดับราคา/ความเร็วที่เหมาะกับการใช้งาน VPN</li>
+                                <li>ยืนยันและรอ SMS</li>
+                            </ol>
+                            <h3>ทางเลือกต่ออายุอัตโนมัติ</h3>
+                            <ol>
+                                <li>เปิด <strong>ต่ออายุอัตโนมัติ</strong> ของแพ็กหลัก</li>
+                                <li>เติมเงินให้เพียงพอก่อนถึงรอบตัดรอบทุกเดือน</li>
+                            </ol>
+
+                            <p class="note">แก้ไขเป็นแพ็ก dtac ล่าสุดที่คุณต้องการสื่อสารได้เลย</p>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const track = document.getElementById('track');
+const prev  = document.getElementById('prev');
+const next  = document.getElementById('next');
+
+function scrollByOne(dir){
+  const w = track.getBoundingClientRect().width;
+  track.scrollBy({ left: dir * (w * 0.98), behavior: 'smooth' });
+}
+prev?.addEventListener('click', () => scrollByOne(-1));
+next?.addEventListener('click', () => scrollByOne( 1));
+    </script>
+</body>
+
+</html>
